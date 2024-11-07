@@ -1,0 +1,83 @@
+/* Reset de Estilos Globais */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilos do Container Principal */
+.conteudo-principal {
+    display: flex; /* Usando flexbox */
+    justify-content: space-between; /* Espaço entre a imagem e o formulário */
+    align-items: flex-start;
+    padding: 2rem;
+}
+
+/* Seção de Adicionar Produto */
+.adicionar-produto {
+    flex: 1; /* Ocupa 50% do espaço disponível */
+    margin-right: 2rem;
+}
+
+/* Seção Carrinho */
+.carrinho {
+    flex: 1; /* Ocupa 50% do espaço disponível */
+}
+
+/* Estilo da Imagem do Carrinho */
+.carrinho img {
+    width: 100%;
+    max-width: 300px; /* Limita a largura da imagem */
+    margin-bottom: 2rem; /* Espaço abaixo da imagem */
+}
+
+/* Estilos do Cabeçalho */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    border-bottom: 1px solid #ddd;
+}
+
+/* Estilo do Logo no Cabeçalho */
+.header__logo {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+/* Estilos de Navegação */
+.nav a {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    text-decoration: none;
+    color: var(--secondary-color); /* Cor secundária */
+}
+
+/* Botões de Login e Registro */
+.nav .nav__btn--login,
+.nav .nav__btn--register {
+    padding: 0.8rem 4rem;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    margin-right: 1rem;
+}
+
+/* Botão de Login */
+.nav .nav__btn--login {
+    background-color: var(--primary-color); /* Cor principal */
+    color: var(--white); /* Cor branca */
+}
+
+/* Botão de Registro */
+.nav .nav__btn--register {
+    background-color: var(--secondary-color); /* Cor secundária */
+    color: var(--white); /* Cor branca */
+}
+
+.container__box{
+    height: 400px;
+}

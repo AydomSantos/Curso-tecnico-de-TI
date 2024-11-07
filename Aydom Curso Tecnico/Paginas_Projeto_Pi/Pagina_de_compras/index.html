@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Link para o CSS do Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqujzEqsOGsME2DdOuoUelJ8YC4nDHZdjDjrKQia6tV+I7VN9ElOsJSN4Q"
+      crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+</head>
+<body>
+
+    <!--Header-->
+    <header class="header">
+        <span class="header__logo">Logo</span>
+    </header>
+
+    <!-- Conteúdo Principal -->
+    <main class="conteudo-principal container d-flex justify-content-center align-items-center ">
+        <!-- Card contendo o conteúdo -->
+        <div class="card p-3 p-md-4 ">
+            <div class="grafismo-azul"></div>
+
+            <!-- Container para imagem e formulário lado a lado -->
+            <div class="row">
+                <!-- Coluna de imagem -->
+                <div class="col-md-6 mb-3 mb-md-0">
+                    <section class="imagem-carrinho">
+                        <img src="assets/img/produtos/celulares/celular.jpeg" alt="Imagem de um carrinho de compras cinza" class="img-fluid" style="width: 30%;">
+                        <img src="assets/img/produtos/celulares/celular__2.jpeg" alt="Imagem de um carrinho de compras cinza" class="img-fluid" style="width: 30%;">
+                        <img src="assets/img/produtos/celulares/celular__3.jpeg" alt="Imagem de um carrinho de compras cinza" class="img-fluid" style="width: 30%;">
+                    </section>
+                </div>
+
+                <section class="carrinho col-md-6">
+                    <div class="titulo-wrapper">
+                        <h2 class="carrinho__titulo">Produtos no carrinho</h2>
+                    </div>
+        
+                    <section class="carrinho__produtos" id="lista-produtos">
+                        <section class="carrinho__produtos__produto">
+                            <span class="texto-azul">1x</span> Celular <span class="texto-azul">R$1400</span>
+                        </section>
+                    </section>
+        
+                    <div class="divisoria"></div>
+        
+                    <p class="carrinho__total">
+                        Total: <span class="texto-azul" id="valor-total">R$0,00</span>
+                    </p>
+                </section>
+
+                <!-- Coluna de formulário -->
+                <div class="col-md-6">
+                    <section class="adicionar-produto">
+                        <h1 class="titulo">
+                            Carrinho de <span class="texto-azul">compras</span>
+                        </h1>
+        
+                        <form class="formulario row g-3">
+                            <div class="col-12 col-md-6">
+                                <label class="campo-grupo">
+                                    <span class="texto-medio-azul">Produto</span>
+                                    <select class="form-select produto-input" name="produto" id="produto">
+                                        <option value="Fone de ouvido - R$ 100">Fone de ouvido - R$100</option>
+                                        <option value="Celular - R$ 1400">Celular - R$1400</option>
+                                        <option value="Oculus VR - R$ 5000">Oculus VR - R$5000</option>
+                                    </select>
+                                </label>
+                            </div>
+        
+                            <div class="parte-inferior d-flex gap-3">
+                                <div class="col-6">
+                                    <label class="campo-grupo">
+                                        <span class="texto-medio-azul">Qtde.</span>
+                                        <input class="form-control quantidade-input" id="quantidade" type="number" placeholder="100" value="0">
+                                    </label>
+                                </div>
+        
+                                <div class="botoes-wrapper">
+                                    <button type="button" class="btn btn-primary botao-adicionar">Adicionar</button>
+                                    <button type="button" class="btn btn-dark botao-limpar">Limpar</button>
+                                </div>
+                            </div>
+                        </form>
+                    </section>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- JavaScript do Bootstrap e Swiper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="assets/script/main.js"></script>
+</body>
+</html>
