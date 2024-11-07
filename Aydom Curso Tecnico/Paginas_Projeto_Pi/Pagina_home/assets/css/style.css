@@ -1,49 +1,56 @@
+
 :root {
-    --primary-color: #1875E8;
-    --secondary-color: #01080E;
-    --white: #FFF;
+    --primary-color: #1875E8; /* Cor principal */
+    --secondary-color: #01080E; /* Cor secundária */
+    --white: #FFF; /* Cor branca */
 }
 
+/* Reset de Estilos Globais */
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    box-sizing: border-box; 
 }
 
+/* Estilo do Body */
 body {
-    background-color: var(--white);
-    font-family: 'Inter', sans-serif;
-    min-height: 200vh;
+    background-color: var(--white); 
+    font-family: 'Inter', sans-serif; 
+    min-height: 250vh;
     display: flex;
     flex-direction: column;
 }
 
-/* Header */
+/* ------------------------ HEADER ------------------------ */
 
+/* Estilos do Cabeçalho */
 .header {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    justify-content: space-between; 
+    align-items: center; 
     padding: 1rem;
-    border-bottom: 1px solid #ddd;
+    border-bottom: 1px solid #ddd; 
 }
 
+/* Estilo do Logo no Cabeçalho */
 .header__logo {
     font-size: 2rem;
-    font-weight: bold;
+    font-weight: bold; 
 }
 
-/* Navigation */
+/* ------------------------ NAVIGATION ------------------------ */
 
+/* Estilos de Navegação */
 .nav a {
     display: inline-block;
     padding: 0.5rem 1rem;
-    border: 1px solid #ddd;
+    border: 1px solid #ddd; 
     border-radius: 5px;
     text-decoration: none;
-    color: var(--secondary-color);
+    color: var(--secondary-color); 
 }
 
+/* Botões de Login e Registro */
 .nav .nav__btn--login,
 .nav .nav__btn--register {
     padding: 0.8rem 4rem;
@@ -52,23 +59,27 @@ body {
     cursor: pointer;
 }
 
+/* Botão de Login */
 .nav .nav__btn--login {
-    background-color: var(--primary-color);
-    color: var(--white);
+    background-color: var(--primary-color); 
+    color: var(--white); 
 }
 
+/* Botão de Registro */
 .nav .nav__btn--register {
-    background-color: var(--secondary-color);
-    color: var(--white);
+    background-color: var(--secondary-color); 
+    color: var(--white); 
 }
 
-/* Swiper */
+/* ------------------------ SWIPER ------------------------ */
 
+/* Estilos do Slider */
 .swiper {
     width: 100%;
-    height: 25rem;
+    height: 25rem; /* Altura fixa para o swiper */
 }
 
+/* Estilos para cada Slide */
 .swiper-slide {
     text-align: center;
     font-size: 18px;
@@ -78,75 +89,83 @@ body {
     align-items: center;
 }
 
+/* Imagem do Slide */
 .swiper-slide img {
     display: block;
     width: 100%;
     height: 100%;
-    object-fit: cover;
+    object-fit: cover; /* Preenche a área do slide */
     object-position: center;
 }
 
-/* Main Content */
+/* ------------------------ MAIN CONTENT ------------------------ */
 
+/* Estilo da Área Principal */
 main {
     width: 100%;
     height: 100%;
+    
 }
 
-/* Categorias Section */
+/* ------------------------ CATEGORIAS ------------------------ */
 
+/* Estilos para a seção de Categorias */
 .categorias {
     display: flex;
     flex-wrap: wrap;
     gap: 16px;
     width: 100%;
-    justify-content: center;
+    justify-content: center; /* Alinha as categorias no centro */
     margin-top: 3rem;
     background: #f7f7f7;
     padding: 2rem;
     margin-bottom: 4rem;
 }
 
+/* Caixa de Categoria */
 .categorias__box {
-    background-color: var(--primary-color);
+    background-color: var(--primary-color); /* Cor de fundo */
     border-radius: 8px;
     width: 180px;
     padding: 16px;
     text-align: center;
 }
 
+/* Título da Categoria */
 .categorias__box h3 {
     margin-top: 8px;
     font-size: 16px;
     color: #fff;
 }
 
-/* Ultimas Buscas Section */
+/* ------------------------ ÚLTIMAS BUSCAS ------------------------ */
 
-.section__ultimas__buscas{
+/* Estilos para a seção "Últimas Buscas" */
+.section__ultimas__buscas {
     margin: 0 2rem;
+    margin-bottom: 6rem;
 }
-
 
 .section__ultimas__buscas--container {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     padding: 2rem;
-    width: 90%;
+    width: 100%;
     margin-top: 2rem;
-    
 }
 
+/* Estilo dos Cards de Busca */
 .section__ultimas__busca--card {
     background-color: #fff;
     border: 1px solid #ddd;
     border-radius: 8px;
     width: 250px;
     padding: 1rem;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
 }
 
+/* Estilos da Imagem do Card */
 .section__ultimas__busca--card--img {
     width: 100%;
     height: 250px;
@@ -161,25 +180,121 @@ main {
     object-position: center;
 }
 
+/* Estilo do Texto no Card */
 .section__ultimas__busca--card--text {
     margin-top: 1rem;
 }
 
 .section__ultimas__busca--card--span__preço {
     font-weight: bold;
-    color: var(--primary-color);
+    color: var(--primary-color); /* Cor do preço */
     display: block;
     margin-bottom: 0.5rem;
 }
 
 .section__ultimas__busca--card--text--descricao {
     font-size: 0.9rem;
-    color: #333;
+    color: #333; /* Cor do texto */
     margin-bottom: 0.5rem;
 }
 
 .section__ultimas__busca--card--text--localização,
 .section__ultimas__busca--card--text--data {
     font-size: 0.8rem;
-    color: #666;
+    color: #666; /* Cor para dados secundários */
+}
+
+/* ------------------------ MAIS PROCURADOS EM CARROS ------------------------ */
+
+/* Estilos para os cards de "Mais Procurados em Carros" */
+.section__mais__procurados__em__carros--container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 2rem;
+    width: 100%;
+    margin: 0 2rem;
+    
+}
+
+.section__mais__procurados__em__carros--container
+.section__mais__procurados__em__carros--titulo{
+    margin: 0 1rem ;
+}
+
+/* Estilo dos Cards de Carros Mais Procurados */
+.section__mais__procurados__em__carros--card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    width: 250px;
+
+    padding: 1rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+   
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Efeito de hover */
+}
+
+
+/* Imagem do Card de Carro */
+.section__mais__procurados__em__carros--img {
+    width: 100%;
+    height: 250px;
+    overflow: hidden;
+    border-radius: 8px;
+}
+
+.section__mais__procurados__em__carros--img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+/* Texto no Card de Carro */
+.section__mais__procurados__em__carros--card--text {
+    margin-top: 1rem;
+}
+
+.section__mais__procurados__em__carros--card--span__preço {
+    font-weight: bold;
+    color: var(--primary-color); 
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+.section__mais__procurados__em__carros--card--text--descricao {
+    font-size: 0.9rem;
+    color: #333; 
+    margin-bottom: 0.5rem;
+}
+
+.section__mais__procurados__em__carros--card--text--localização,
+.section__mais__procurados__em__carros--card--text--data {
+    font-size: 0.8rem;
+    color: #666; /* Cor para dados secundários */
+}
+
+/* ------------------------ SWIPER WRAPPER ------------------------ */
+
+/* Estilo do Container do Swiper */
+.swiper-wrapper {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+}
+
+/* Tamanho dos Slides */
+.swiper-slide {
+    flex-shrink: 0;
+    width: 250px;
+}
+
+/* Estilo da Paginação do Swiper */
+.swiper-pagination-mais {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 1rem;
 }
