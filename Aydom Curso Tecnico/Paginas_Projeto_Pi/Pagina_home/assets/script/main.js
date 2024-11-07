@@ -34,3 +34,25 @@ var swiperCarros = new Swiper(".section__mais__procurados__em__carros--swiper", 
     clickable: true,  
   },
 });
+
+// Configuração do Swiper para "Selecionamos para você"
+
+var swiperSelecionados = new Swiper(".section__selecionamos__para__voce--swiper", {
+  slidesPerView: 3,  
+  spaceBetween: 3,  
+  freeMode: true,  
+  pagination: {
+    el: ".swiper-pagination",  
+    clickable: true,  
+  },
+})
+
+var swiperAnuciopago = new Swiper(".section__anuncio__patrocinado--swiper ", {
+  slidesPerView: 2,  
+  spaceBetween: 3,  
+  freeMode: true,  
+  pagination: {
+    el: ".swiper-pagination",  
+    clickable: true,  
+  },
+})

@@ -275,6 +275,114 @@ main {
     color: #666; /* Cor para dados secundários */
 }
 
+
+/* ------------------------ Selecionamos para você ------------------------ */
+
+.section__selecionamos__para__voce--container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 2rem;
+    width: 100%;
+    margin: 0 2rem;
+}
+
+.section__selecionamos__para__voce--card{
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    width: 400px;
+
+    padding: 1rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+   
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Efeito de hover */
+}
+
+.section__selecionamos__para__voce--img {
+    width: 100%;
+    height: 250px;
+    overflow: hidden;
+    border-radius: 8px;
+}
+
+.section__selecionamos__para__voce--card--text{
+    margin-top: 1rem;
+}
+
+.section__selecionamos__para__voce--card--span__preço {
+    font-weight: bold;
+    color: var(--primary-color); 
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+.section__selecionamos__para__voce--card--text--descricao {
+    font-size: 0.9rem;
+    color: #333; 
+    margin-bottom: 0.5rem;
+}
+
+.section__selecionamos__para__voce--card--text--localização,
+.section__selecionamos__para__voce--card--text--data{
+    font-size: 0.8rem;
+    color: #666; 
+}
+
+/* ------------------------ Anucios patrocinados ------------------------ */
+
+.section__anuncio__patrocinado--container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 2rem;
+    width: 100%;
+    margin: 0 2rem;
+}
+
+.section__anuncio__patrocinado--card{
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    width: 600px;
+
+    padding: 1rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+   
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Efeito de hover */
+}
+
+.section__anuncio__patrocinado--img{
+    width: 100%;
+    height: 250px;
+    overflow: hidden;
+    border-radius: 8px;
+}
+
+.section__anuncio__patrocinado--text{
+    margin-top: 1rem;
+}
+
+.section__anuncio__patrocinado--span__preço{
+    font-weight: bold;
+    color: var(--primary-color); 
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+.section__anuncio__patrocinado--text--descricao{
+    font-size: 0.9rem;
+    color: #333; 
+    margin-bottom: 0.5rem;
+}
+
+.section__anuncio__patrocinado--text--localização,
+.section__anuncio__patrocinado--text--data{
+    font-size: 0.8rem;
+    color: #666; 
+}
+
+
 /* ------------------------ SWIPER WRAPPER ------------------------ */
 
 /* Estilo do Container do Swiper */
@@ -298,3 +406,5 @@ main {
     transform: translateX(-50%);
     padding: 1rem;
 }
+
+/* ------------------------ MEDIA QUERIES ------------------------ */
