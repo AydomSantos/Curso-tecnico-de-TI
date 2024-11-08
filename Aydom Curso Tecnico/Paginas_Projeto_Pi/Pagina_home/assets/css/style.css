@@ -159,7 +159,6 @@ main {
     background-color: #fff;
     border: 1px solid #ddd;
     border-radius: 8px;
-    width: 250px;
     padding: 1rem;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
 }
@@ -226,12 +225,8 @@ main {
     background-color: #fff;
     border: 1px solid #ddd;
     border-radius: 8px;
-    width: 250px;
-
     padding: 1rem;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-   
-    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Efeito de hover */
 }
 
 
@@ -290,12 +285,9 @@ main {
     background-color: #fff;
     border: 1px solid #ddd;
     border-radius: 8px;
-    width: 400px;
-
     padding: 1rem;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
    
-    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Efeito de hover */
 }
 
 .section__selecionamos__para__voce--img {
@@ -343,12 +335,8 @@ main {
     background-color: #fff;
     border: 1px solid #ddd;
     border-radius: 8px;
-    width: 600px;
-
     padding: 1rem;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-   
-    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Efeito de hover */
 }
 
 .section__anuncio__patrocinado--img{
