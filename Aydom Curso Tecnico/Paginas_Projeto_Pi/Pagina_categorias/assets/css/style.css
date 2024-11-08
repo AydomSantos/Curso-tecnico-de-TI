@@ -1,0 +1,71 @@
+:root {
+    --primary-color: #1875E8; /* Cor principal */
+    --secondary-color: #01080E; /* Cor secundária */
+    --white: #FFF; /* Cor branca */
+}
+
+/* Reset de Estilos Globais */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+}
+
+/* Estilo do Body */
+body {
+    background-color: var(--white); 
+    font-family: 'Inter', sans-serif; 
+    
+    
+}
+
+/* ------------------------ HEADER ------------------------ */
+
+/* Estilos do Cabeçalho */
+.header {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center; 
+    padding: 1rem;
+    border-bottom: 1px solid #ddd; 
+}
+
+/* Estilo do Logo no Cabeçalho */
+.header__logo {
+    font-size: 2rem;
+    font-weight: bold; 
+}
+
+/* ------------------------ NAVIGATION ------------------------ */
+
+/* Estilos de Navegação */
+.nav a {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    border: 1px solid #ddd; 
+    border-radius: 5px;
+    text-decoration: none;
+    color: var(--secondary-color); 
+}
+
+/* Botões de Login e Registro */
+.nav .nav__btn--login,
+.nav .nav__btn--register {
+    padding: 0.8rem 4rem;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    margin-right: 1rem;
+}
+
+/* Botão de Login */
+.nav .nav__btn--login {
+    background-color: var(--primary-color); 
+    color: var(--white); 
+}
+
+/* Botão de Registro */
+.nav .nav__btn--register {
+    background-color: var(--secondary-color); 
+    color: var(--white); 
+}
