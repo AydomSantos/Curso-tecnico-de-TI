@@ -26,15 +26,22 @@
 
             <!-- Container para imagem e formulário lado a lado -->
             <div class="row">
-                <!-- Coluna de imagem -->
+                <!-- Coluna de imagem com grid responsivo -->
                 <div class="col-md-6 mb-3 mb-md-0">
-                    <section class="imagem-carrinho">
-                        <img src="assets/img/produtos/celulares/celular.jpeg" alt="Imagem de um carrinho de compras cinza" class="img-fluid" style="width: 30%;">
-                        <img src="assets/img/produtos/celulares/celular__2.jpeg" alt="Imagem de um carrinho de compras cinza" class="img-fluid" style="width: 30%;">
-                        <img src="assets/img/produtos/celulares/celular__3.jpeg" alt="Imagem de um carrinho de compras cinza" class="img-fluid" style="width: 30%;">
+                    <section class="imagem-carrinho row">
+                        <div class="col-6 col-md-4">
+                            <img src="assets/img/produtos/celulares/celular.jpeg" alt="Imagem de um carrinho de compras cinza" class="img-fluid">
+                        </div>
+                        <div class="col-6 col-md-4">
+                            <img src="assets/img/produtos/celulares/celular__2.jpeg" alt="Imagem de um carrinho de compras cinza" class="img-fluid">
+                        </div>
+                        <div class="col-6 col-md-4">
+                            <img src="assets/img/produtos/celulares/celular__3.jpeg" alt="Imagem de um carrinho de compras cinza" class="img-fluid">
+                        </div>
                     </section>
                 </div>
 
+                <!-- Coluna do carrinho -->
                 <section class="carrinho col-md-6">
                     <div class="titulo-wrapper">
                         <h2 class="carrinho__titulo mb-3">Produtos no carrinho</h2>
@@ -76,7 +83,7 @@
                                 <div class="col-6">
                                     <label class="campo-grupo">
                                         <span class="texto-medio-azul">Qtde.</span>
-                                        <input class="form-control quantidade-input" id="quantidade" type="number" placeholder="100" value="0">
+                                        <input class="form-control quantidade-input" id="quantidade" type="number" min="1" placeholder="Quantidade" value="1">
                                     </label>
                                 </div>
         
