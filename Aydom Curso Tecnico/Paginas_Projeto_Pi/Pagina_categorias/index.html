@@ -32,7 +32,6 @@
         <h4>Categoria de Produtos</h4>
       </header>
       <ul class="nav flex-column p-3">
-        <!-- Categorias listadas -->
         <li class="nav-item mb-3">
           <a href="#" class="btn btn-outline-secondary w-100">Celular</a>
         </li>
@@ -42,6 +41,28 @@
         <li class="nav-item mb-3">
           <a href="#" class="btn btn-outline-secondary w-100">Tablets</a>
         </li>
+        <li class="nav-item mb-3">
+          <a href="#" class="btn btn-outline-secondary w-100">Acessórios</a>
+        </li>
+        <li class="nav-item mb-3">
+          <a href="#" class="btn btn-outline-secondary w-100">Smart TVs</a>
+        </li>
+        <li class="nav-item mb-3">
+          <a href="#" class="btn btn-outline-secondary w-100">Eletrodomésticos</a>
+        </li>
+        <li class="nav-item mb-3">
+          <a href="#" class="btn btn-outline-secondary w-100">Livros</a>
+        </li>
+        <li class="nav-item mb-3">
+          <a href="#" class="btn btn-outline-secondary w-100">Brinquedos</a>
+        </li>
+        <li class="nav-item mb-3">
+          <a href="#" class="btn btn-outline-secondary w-100">Vídeos Games</a>
+        </li>
+        <li class="nav-item mb-3">
+          <a href="#" class="btn btn-outline-secondary w-100">Moda</a>
+        </li>
+        
         <!-- Continue as demais categorias... -->
       </ul>
     </nav>
@@ -53,12 +74,21 @@
         <!-- Filtro e Campo de Busca -->
         <div class="d-flex justify-content-between align-items-center mb-4">
           <input type="text" class="form-control w-50 me-2" placeholder="Buscar produtos" id="search-input">
+          <button type="button" class="btn btn-primary" id="filter-btn">Filtrar</button>
+          
           
           <select class="form-select w-25" id="category-filter">
             <option selected>Filtrar por Categoria</option>
             <option value="Celular">Celular</option>
             <option value="Computadores">Computadores</option>
             <option value="Tablets">Tablets</option>
+            <option value="Acessórios">Acessórios</option>
+            <option value="Smart TVs">Smart TVs</option>
+            <option value="Eletrodomésticos">Eletrodomésticos</option>
+            <option value="Livros">Livros</option>
+            <option value="Brinquedos">Brinquedos</option>
+            <option value="Vídeos Games">Vídeos Games</option>
+            <option value="Moda">Moda</option>
             <!-- Continue as opções de categoria -->
           </select>
         </div>
@@ -89,51 +119,115 @@
               </div>
             </div>
           </div>
-
-           <!-- Produto 2 -->
-           <div class="col-md-4 mb-4 product-item" data-category="Computadores">
+          <!-- Produto 3 -->
+          <div class="col-md-4 mb-4 product-item" data-category="Tablets">
             <div class="card">
-              <img src="https://via.placeholder.com/150" class="card-img-top" alt="Imagem do Produto 2">
+              <img src="https://via.placeholder.com/150" class="card-img-top" alt="Imagem do Produto 3">
               <div class="card-body">
-                <h5 class="card-title">Produto 2</h5>
+                <h5 class="card-title">Produto 3</h5>
                 <p class="card-text">Descrição breve do produto.</p>
-                <p class="card-text fw-bold">R$ 150,00</p>
+                <p class="card-text fw-bold">R$ 200,00</p>
+                <a href="#" class="btn btn-primary">Comprar</a>
+              </div>
+            </div>
+          </div>
+          <!-- Produto 4 -->
+          <div class="col-md-4 mb-4 product-item" data-category="Acessórios">
+            <div class="card">
+              <img src="https://via.placeholder.com/150" class="card-img-top" alt="Imagem do Produto 4">
+              <div class="card-body">
+                <h5 class="card-title">Produto 4</h5>
+                <p class="card-text">Descrição breve do produto.</p>
+                <p class="card-text fw-bold">R$ 250,00</p>
+                <a href="#" class="btn btn-primary">Comprar</a>
+              </div>
+            </div>
+          </div>
+          <!-- Produto 5 -->
+          <div class="col-md-4 mb-4 product-item" data-category="Smart TVs">
+            <div class="card">
+              <img src="https://via.placeholder.com/150" class="card-img-top" alt="Imagem do Produto 5">
+              <div class="card-body">
+                <h5 class="card-title">Produto 5</h5>
+                <p class="card-text">Descrição breve do produto.</p>
+                <p class="card-text fw-bold">R$ 300,00</p>
+                <a href="#" class="btn btn-primary">Comprar</a>
+              </div>
+            </div>
+          </div>
+          <!-- Produto 6 -->
+          <div class="col-md-4 mb-4 product-item" data-category="Eletrodomésticos">
+            <div class="card">
+              <img src="https://via.placeholder.com/150" class="card-img-top" alt="Imagem do Produto 6">
+              <div class="card-body">
+                <h5 class="card-title">Produto 6</h5>
+                <p class="card-text">Descrição breve do produto.</p>
+                <p class="card-text fw-bold">R$ 350,00</p>
+                <a href="#" class="btn btn-primary">Comprar</a>
+              </div>
+            </div>
+          </div>
+          <!-- Produto 7 -->
+          <div class="col-md-4 mb-4 product-item" data-category="Livros">
+            <div class="card">
+              <img src="https://via.placeholder.com/150" class="card-img-top" alt="Imagem do Produto 7">
+              <div class="card-body">
+                <h5 class="card-title">Produto 7</h5>
+                <p class="card-text">Descrição breve do produto.</p>
+                <p class="card-text fw-bold">R$ 400,00</p>
+                <a href="#" class="btn btn-primary">Comprar</a>   
+              </div>
+            </div>
+          </div>
+
+          <!-- Produto 8 -->
+          <div class="col-md-4 mb-4 product-item" data-category="Brinquedos">
+            <div class="card">
+              <img src="https://via.placeholder.com/150" class="card-img-top" alt="Imagem do Produto 8">
+              <div class="card-body">
+                <h5 class="card-title">Produto 8</h5>
+                <p class="card-text">Descrição breve do produto.</p>
+                <p class="card-text fw-bold">R$ 450,00</p>
                 <a href="#" class="btn btn-primary">Comprar</a>
               </div>
             </div>
           </div>
 
-           <!-- Produto 2 -->
-           <div class="col-md-4 mb-4 product-item" data-category="Computadores">
+          <!-- Produto 9 -->
+          <div class="col-md-4 mb-4 product-item" data-category="Vídeos Games">
             <div class="card">
-              <img src="https://via.placeholder.com/150" class="card-img-top" alt="Imagem do Produto 2">
+              <img src="https://via.placeholder.com/150" class="card-img-top" alt="Imagem do Produto 9">
               <div class="card-body">
-                <h5 class="card-title">Produto 2</h5>
+                <h5 class="card-title">Produto 9</h5>
                 <p class="card-text">Descrição breve do produto.</p>
-                <p class="card-text fw-bold">R$ 150,00</p>
+                <p class="card-text fw-bold">R$ 500,00</p>
                 <a href="#" class="btn btn-primary">Comprar</a>
               </div>
             </div>
           </div>
 
-           <!-- Produto 2 -->
-           <div class="col-md-4 mb-4 product-item" data-category="Computadores">
+          <!-- Produto 10 -->
+          <div class="col-md-4 mb-4 product-item" data-category="Moda">
             <div class="card">
-              <img src="https://via.placeholder.com/150" class="card-img-top" alt="Imagem do Produto 2">
+              <img src="https://via.placeholder.com/150" class="card-img-top" alt="Imagem do Produto 10">
               <div class="card-body">
-                <h5 class="card-title">Produto 2</h5>
+                <h5 class="card-title">Produto 10</h5>
                 <p class="card-text">Descrição breve do produto.</p>
-                <p class="card-text fw-bold">R$ 150,00</p>
+                <p class="card-text fw-bold">R$ 550,00</p>
                 <a href="#" class="btn btn-primary">Comprar</a>
               </div>
             </div>
           </div>
-          <!-- Continue com mais produtos... -->
+          
         </div>
       </div>
     </div>
   </div>
 
-  <script src="assets/script/main.js"></script>
+  <!-- JavaScript -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  <script src="assets/js/main.js"></script>
 </body>
 </html>

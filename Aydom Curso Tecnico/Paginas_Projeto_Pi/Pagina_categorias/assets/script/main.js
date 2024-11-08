@@ -1,24 +1,19 @@
-// Função de busca
-document.getElementById('search-input').addEventListener('input', function() {
-    const searchQuery = this.value.toLowerCase();
-    document.querySelectorAll('.product-item').forEach(function(product) {
-      const title = product.querySelector('.card-title').textContent.toLowerCase();
-      if (title.includes(searchQuery)) {
-        product.style.display = 'block';
-      } else {
-        product.style.display = 'none';
-      }
-    });
-  });
+document.addEventListener("DOMContentLoaded", function () {
+  const categoryFilter = document.getElementById("category-filter");
+  const productsContainer = document.getElementById("products-container");
+  const productItems = productsContainer.getElementsByClassName("product-item");
 
-  // Função de filtro por categoria
-  document.getElementById('category-filter').addEventListener('change', function() {
-    const category = this.value;
-    document.querySelectorAll('.product-item').forEach(function(product) {
-      if (category === 'Filtrar por Categoria' || product.dataset.category === category) {
-        product.style.display = 'block';
+  // Adiciona evento de filtro ao select de categoria
+  categoryFilter.addEventListener("change", function () {
+    const selectedCategory = categoryFilter.value;
+
+    Array.from(productItems).forEach(function (item) {
+      // Verifica se a categoria selecionada corresponde ao data-category do item
+      if (selectedCategory === "Filtrar por Categoria" || item.getAttribute("data-category") === selectedCategory) {
+        item.style.display = "block"; // Mostra o item
       } else {
-        product.style.display = 'none';
+        item.style.display = "none"; // Oculta o item
       }
     });
   });
+});
